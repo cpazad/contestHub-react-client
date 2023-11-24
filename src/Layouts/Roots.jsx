@@ -10,7 +10,7 @@ const Roots = () => {
       <Helmet>
         <title> ContestHub </title>
       </Helmet>
-      <div className="root-container bg-slate-100">
+      <div className="root-container bg-slate-100 ">
         <Navbar></Navbar>
         <Outlet></Outlet>
         <Footer></Footer>
