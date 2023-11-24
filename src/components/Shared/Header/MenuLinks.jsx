@@ -25,24 +25,24 @@ const MenuLinks = () => {
       <i>
         <div style={linkStyle}>
           <NavLink
-            to="/menu"
+            to="/allcontest"
             style={({ isActive }) => ({
               color: isActive ? "red" : "white",
             })}
           >
-            Menu
+            All Contests 
           </NavLink>
         </div>
       </i>
       <i>
         <div style={linkStyle}>
           <NavLink
-            to="/shop/salad"
+            to="/pricing"
             style={({ isActive }) => ({
               color: isActive ? "red" : "white",
             })}
           >
-            Shop
+            Pricing 
           </NavLink>
         </div>
       </i>

@@ -17,6 +17,9 @@
 
 body{
   background-color: darkgray;
+  background-image: url("/src/assets/images/Matrix-1s-1084px.png");
+  background-repeat: repeat;
+  
 }
 p{
   font-family: 'Poppins', sans-serif;
