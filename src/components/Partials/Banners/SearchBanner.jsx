@@ -11,7 +11,7 @@ const SearchBanner = () => {
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
-          <p className="my-5 text-2xl">
+          <p className="my-5 text-3xl font-bold font-popins">
             Coding, Designing, Creating: <br /> Your Talent, <br />
             Your ContestHub!
           </p>

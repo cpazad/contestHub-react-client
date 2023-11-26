@@ -88,7 +88,7 @@ const Login = () => {
                 <FaLock className="inline"></FaLock>
               </i>
             </div>
-            <button className="btm btn-outline" type="submit">
+            <button className="btn btn-block rounded-full bg-red-800 hover:bg-black text-white" type="submit">
               {" "}
               Log In Now {" "}
             </button>
@@ -101,7 +101,7 @@ const Login = () => {
               Don not have account yet?{" "}
               <Link to="/registration">
                 {" "}
-                <span className="text-mybrown font-bold hover:underline">
+                <span className="text-violet-400 font-bold hover:underline">
                   {" "}
                   Sign Up{" "}
                 </span>{" "}

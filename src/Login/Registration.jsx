@@ -152,7 +152,7 @@ const Registration = () => {
               )}
             </div>
             <button
-              className="btm hover:bg-black hover:text-white"
+              className="btn btn-block rounded-full bg-red-800 hover:bg-black text-white"
               type="submit"
             >
               {" "}
@@ -164,7 +164,7 @@ const Registration = () => {
                 Already have account!{" "}
                 <Link to="/login">
                   {" "}
-                  <span className="text-mybrown font-bold hover:underline">
+                  <span className="text-violet-400 font-bold hover:underline">
                     Log In
                   </span>{" "}
                 </Link>

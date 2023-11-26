@@ -46,6 +46,18 @@ const MenuLinks = () => {
           </NavLink>
         </div>
       </i>
+      <i>
+        <div style={linkStyle}>
+          <NavLink
+            to="/leaderboard"
+            style={({ isActive }) => ({
+              color: isActive ? "red" : "white",
+            })}
+          >
+            Leaderboard 
+          </NavLink>
+        </div>
+      </i>
 
       
       <i>
@@ -57,6 +69,18 @@ const MenuLinks = () => {
             })}
           >
             Contact Us
+          </NavLink>
+        </div>
+      </i>
+      <i>
+        <div style={linkStyle}>
+          <NavLink
+            to="/registration"
+            style={({ isActive }) => ({
+              color: isActive ? "red" : "white",
+            })}
+          >
+            registration
           </NavLink>
         </div>
       </i>

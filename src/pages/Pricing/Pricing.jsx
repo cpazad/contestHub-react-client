@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import HoverButton from "../../components/Partials/Buttons/Btn collections/HoverButton";
 import "./pricing.css";
 const Pricing = () => {
   return (
@@ -17,9 +19,9 @@ const Pricing = () => {
           <li>10 Domains</li>
           <li>1GB Bandwidth</li>
           <li className="grey">
-            <a href="#" className="button">
-              Sign Up
-            </a>
+          <Link>
+            <HoverButton> Sign Up </HoverButton>
+            </Link>
           </li>
         </ul>
       </div>
@@ -34,9 +36,9 @@ const Pricing = () => {
           <li>25 Domains</li>
           <li>2GB Bandwidth</li>
           <li className="grey">
-            <a href="#" className="button">
-              Sign Up
-            </a>
+          <Link>
+            <HoverButton> Sign Up </HoverButton>
+            </Link>
           </li>
         </ul>
       </div>
@@ -49,9 +51,12 @@ const Pricing = () => {
           <li>50 Domains</li>
           <li>5GB Bandwidth</li>
           <li className="grey">
-            <a href="#" className="button">
+            {/* <a href="#" className="button">
               Sign Up
-            </a>
+            </a> */}
+            <Link>
+            <HoverButton> Sign Up </HoverButton>
+            </Link>
           </li>
         </ul>
       </div>{" "}

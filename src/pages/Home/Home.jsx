@@ -1,6 +1,10 @@
 import { Helmet } from "react-helmet-async";
 import SearchBanner from "../../components/Partials/Banners/SearchBanner";
-import About from "./About/About";
+import About from "./HomeSections/About";
+import PopularContests from "../All Contest/PopularContests";
+import ContestCategory from "./HomeSections/ContestCategory";
+import Advertisement from "./HomeSections/Advertisement";
+import BestCreators from "./HomeSections/BestCreators";
 
 const Home = () => {
   return (
@@ -11,6 +15,11 @@ const Home = () => {
       <div>
         <SearchBanner></SearchBanner>
         <About></About>
+        <ContestCategory></ContestCategory>
+        <PopularContests></PopularContests>
+        <Advertisement></Advertisement>
+        <BestCreators></BestCreators>
+        
       </div>
     </div>
   );

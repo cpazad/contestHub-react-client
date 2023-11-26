@@ -5,7 +5,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'mybrown': '#c48f61',
+        'myblack':'#1c2124',
+        'mygreen': '#58b958',
+        'myred':'#f03d5b'
+      },
+      fontFamily: {
+        'gothik': ['Didact Gothic', 'sans-serif'],
+        'popins':['Poppins', 'sans-serif'],
+        'cinzel':['Cinzel', 'serif'],
+        'satisfy':['Satisfy', 'cursive']
+      }
+    },
   },
   plugins: [require("daisyui")],
 }

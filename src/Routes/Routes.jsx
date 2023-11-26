@@ -3,7 +3,7 @@ import Dashboard from "../Layouts/Dashboard";
 import Roots from "../Layouts/Roots";
 import Login from "../Login/Login";
 import Registration from "../Login/Registration";
-import About from "../pages/Home/About/About";
+import About from "../pages/Home/HomeSections/About";
 import Contact from "../pages/Contact/Contact";
 import Admin from "../pages/Dashboard/Admin/Admin";
 import ErrorPage from "../pages/Error/ErrorPage";
@@ -20,6 +20,7 @@ import Users from "../pages/Dashboard/User/Users";
 import Creators from "../pages/Dashboard/Creator/Creators";
 import AllContest from "../pages/All Contest/AllContest";
 import Pricing from "../pages/Pricing/Pricing";
+import Leaderboard from "../pages/All Contest/Leaderboard";
 
 const Router = createBrowserRouter([
   {
@@ -36,8 +37,12 @@ const Router = createBrowserRouter([
         element: <AllContest></AllContest>,
       },
       {
-        path:"/pricing",
-        element:<Pricing></Pricing>
+        path: "/pricing",
+        element: <Pricing></Pricing>,
+      },
+      {
+        path: "/leaderboard",
+        element: <Leaderboard></Leaderboard>,
       },
       {
         path: "/contact",
@@ -60,49 +65,47 @@ const Router = createBrowserRouter([
             element: <Admin></Admin>,
           },
           {
-            path:"manageusers",
-            element:<ManageUsers></ManageUsers>
+            path: "manageusers",
+            element: <ManageUsers></ManageUsers>,
           },
           {
-            path:"managecontests",
-            element:<ManageContests></ManageContests>
+            path: "managecontests",
+            element: <ManageContests></ManageContests>,
           },
           // creators panel
           {
-            path:"creatorspanel",
-            element:<Creators></Creators>
+            path: "creatorspanel",
+            element: <Creators></Creators>,
           },
           {
-            path:"addnewcontest",
-            element:<AddNewContest></AddNewContest>
+            path: "addnewcontest",
+            element: <AddNewContest></AddNewContest>,
           },
           {
-            path:"mycontests",
-            element:<MyContests></MyContests>
+            path: "mycontests",
+            element: <MyContests></MyContests>,
           },
           {
-            path:"contestdetails",
-            element:<ContestDetails></ContestDetails>
+            path: "contestdetails",
+            element: <ContestDetails></ContestDetails>,
           },
           // User Panel pages
           {
-            path:"myprofile",
-            element:<MyProfile></MyProfile>
+            path: "myprofile",
+            element: <MyProfile></MyProfile>,
           },
           {
-            path:"participatedcontest",
-            element:<ParticipatedContests></ParticipatedContests>
+            path: "participatedcontest",
+            element: <ParticipatedContests></ParticipatedContests>,
           },
           {
-            path:"winningcotests",
-            element:<WinningContests></WinningContests>
+            path: "winningcotests",
+            element: <WinningContests></WinningContests>,
           },
           {
-            path:"userpanel",
-            element:<Users></Users>
-          }
-         
-          
+            path: "userpanel",
+            element: <Users></Users>,
+          },
         ],
       },
     ],
