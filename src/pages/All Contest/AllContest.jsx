@@ -18,21 +18,16 @@ const AllContest = () => {
       <Helmet>
         <title> ContestHub | All Contests </title>
       </Helmet>{" "}
-      <div className="p-20">
+      <div className="pt-5 pb-20 px-20">
         <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
           <TabList>
-            <Tab> Design  </Tab>
-            <Tab> Coding  </Tab>
-            <Tab> Writing  </Tab>
-            <Tab> Photography </Tab>
-            <Tab> Educational </Tab>
-            <Tab> Innovation </Tab>
-            <Tab> Gaming </Tab>
-            <Tab> Popular </Tab>
-
+            <Tab> Business Contest  </Tab>
+            <Tab> Medical Contest  </Tab>
+            <Tab> Article Writing  </Tab>
+            <Tab> Gaming Contest </Tab>
           </TabList>
           <TabPanel>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:py-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:py-5 ">
               {/* {
                 salad.map(item => <FoodCard key={item.id} item={item}></FoodCard>)
               } */}
@@ -78,39 +73,7 @@ const AllContest = () => {
               <ContestCard2></ContestCard2>
             </div>{" "}
           </TabPanel>
-          <TabPanel>
-            {" "}
-            <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-4 sm:py-5">
-              {/* {
-                drinks.map(item => <FoodCard key={item.id} item={item}></FoodCard>)
-              } */}
-               <ContestCard2></ContestCard2>
-              <ContestCard2></ContestCard2>
-              <ContestCard2></ContestCard2>
-              <ContestCard2></ContestCard2>
-            </div>{" "}
-          </TabPanel>
-          <TabPanel>
-            {" "}
-            <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-4 sm:py-5">
-              {/* {
-                drinks.map(item => <FoodCard key={item.id} item={item}></FoodCard>)
-              } */}
-               <ContestCard2></ContestCard2>
-              <ContestCard2></ContestCard2>
-              <ContestCard2></ContestCard2>
-              <ContestCard2></ContestCard2>
-            </div>{" "}
-          </TabPanel>
-          <TabPanel>
-            {" "}
-            <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-4 sm:py-5">
-              {/* {
-                drinks.map(item => <FoodCard key={item.id} item={item}></FoodCard>)
-              } */}
-               
-            </div>{" "}
-          </TabPanel>
+          
         </Tabs>
       </div>
     </div>

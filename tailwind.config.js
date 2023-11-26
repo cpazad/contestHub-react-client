@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         'mybrown': '#c48f61',
-        'myblack':'#1c2124',
+        'myblack':'#111828',
         'mygreen': '#58b958',
         'myred':'#f03d5b'
       },

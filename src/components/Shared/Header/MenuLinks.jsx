@@ -1,11 +1,9 @@
 import { NavLink } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 
-
 const MenuLinks = () => {
   const linkStyle = {
     margin: "10px",
-    
   };
   const { user } = useAuth();
   return (
@@ -30,36 +28,41 @@ const MenuLinks = () => {
               color: isActive ? "red" : "white",
             })}
           >
-            All Contests 
-          </NavLink>
-        </div>
-      </i>
-      <i>
-        <div style={linkStyle}>
-          <NavLink
-            to="/pricing"
-            style={({ isActive }) => ({
-              color: isActive ? "red" : "white",
-            })}
-          >
-            Pricing 
-          </NavLink>
-        </div>
-      </i>
-      <i>
-        <div style={linkStyle}>
-          <NavLink
-            to="/leaderboard"
-            style={({ isActive }) => ({
-              color: isActive ? "red" : "white",
-            })}
-          >
-            Leaderboard 
+            All Contests
           </NavLink>
         </div>
       </i>
 
-      
+      {user && (
+        <>
+          <i>
+            <div style={linkStyle}>
+              <NavLink
+                to="/pricing"
+                style={({ isActive }) => ({
+                  color: isActive ? "red" : "white",
+                })}
+              >
+                Pricing
+              </NavLink>
+            </div>
+          </i>
+
+          <i>
+            <div style={linkStyle}>
+              <NavLink
+                to="/leaderboard"
+                style={({ isActive }) => ({
+                  color: isActive ? "red" : "white",
+                })}
+              >
+                Leaderboard
+              </NavLink>
+            </div>
+          </i>
+        </>
+      )}
+
       <i>
         <div style={linkStyle}>
           <NavLink
@@ -72,7 +75,7 @@ const MenuLinks = () => {
           </NavLink>
         </div>
       </i>
-      <i>
+      {/* <i>
         <div style={linkStyle}>
           <NavLink
             to="/registration"
@@ -83,7 +86,7 @@ const MenuLinks = () => {
             registration
           </NavLink>
         </div>
-      </i>
+      </i> */}
     </>
   );
 };

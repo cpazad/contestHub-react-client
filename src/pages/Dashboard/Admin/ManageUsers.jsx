@@ -1,10 +1,53 @@
+import { useQuery } from "@tanstack/react-query";
+import useAxiosSecure from "../../../Hooks/useAxiosSecure";
+import { useState } from "react";
+import axios from "axios";
+import Swal from "sweetalert2";
+
 const ManageUsers = () => {
+  const axiosSecure = useAxiosSecure();
+  const [newRole, setNewRole] = useState("");
+  const { data: users = [], refetch } = useQuery({
+    queryKey: ["users"],
+    queryFn: async () => {
+      const res = await axiosSecure.get("/users");
+      return res.data;
+    },
+  });
+
+  // const handleUpdateRole = async () => {
+  //   try {
+  //     const response = await axios.put(`/users/updateRole/${email}`, {
+  //       newRole,
+  //     });
+  //     console.log(response.data.message);
+  //     // Handle success or update the UI accordingly
+  //   } catch (error) {
+  //     console.error(error);
+  //     // Handle errors or update the UI accordingly
+  //   }
+  // };
+  const handleUpdateRole = (user) => {
+    axiosSecure.patch(`/users/updateRole/${user.email}`, {newRole}).then((res) => {
+      console.log(res.data);
+      if (res.data.modifiedCount > 0) {
+        refetch();
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: `${user.name} is an Admin Now!`,
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
+    });
+  };
   return (
     <div>
       {" "}
       <div>
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-          <div className="flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4 md:space-y-0 py-4 bg-white dark:bg-gray-900">
+          <div className="flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4 md:space-y-0 py-4 bg-white dark:bg-gray-900 px-5">
             <div>
               <button
                 id="dropdownActionButton"
@@ -103,29 +146,20 @@ const ManageUsers = () => {
               />
             </div>
           </div>
-          <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+          <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
             <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-              <tr>
+              <tr className="px-5">
                 <th scope="col" className="p-4">
-                  <div className="flex items-center">
-                    <input
-                      id="checkbox-all-search"
-                      type="checkbox"
-                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                    />
-                    <label htmlFor="checkbox-all-search" className="sr-only">
-                      checkbox
-                    </label>
-                  </div>
+                  <div className="flex items-center ml-5">SL</div>
                 </th>
                 <th scope="col" className="px-6 py-3">
                   Name
                 </th>
                 <th scope="col" className="px-6 py-3">
-                  Position
+                  Roll
                 </th>
                 <th scope="col" className="px-6 py-3">
-                  Status
+                  Action
                 </th>
                 <th scope="col" className="px-6 py-3">
                   Action
@@ -133,264 +167,74 @@ const ManageUsers = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <td className="w-4 p-4">
-                  <div className="flex items-center">
-                    <input
-                      id="checkbox-table-search-1"
-                      type="checkbox"
-                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                    />
-                    <label
-                      htmlFor="checkbox-table-search-1"
-                      className="sr-only"
-                    >
-                      checkbox
-                    </label>
-                  </div>
-                </td>
-                <th
-                  scope="row"
-                  className="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
+              {users.map((user, index) => (
+                <tr
+                  key={users.id}
+                  className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 px-5"
                 >
-                  <img
-                    className="w-10 h-10 rounded-full"
-                    src="/docs/images/people/profile-picture-1.jpg"
-                    alt="Jese image"
-                  />
-                  <div className="ps-3">
-                    <div className="text-base font-semibold">Neil Sims</div>
-                    <div className="font-normal text-gray-500">
-                      neil.sims@flowbite.com
-                    </div>
-                  </div>
-                </th>
-                <td className="px-6 py-4">React Developer</td>
-                <td className="px-6 py-4">
-                  <div className="flex items-center">
-                    <div className="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>{" "}
-                    Online
-                  </div>
-                </td>
-                <td className="px-6 py-4">
-                  {/* <!-- Modal toggle --> */}
-                  <a
-                    href="#"
-                    type="button"
-                    data-modal-target="editUserModal"
-                    data-modal-show="editUserModal"
-                    className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                  <td className="w-4 p-4">
+                    <div className="flex items-center ml-5">{index + 1}</div>
+                  </td>
+                  <th
+                    scope="row"
+                    className="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white"
                   >
-                    Edit user
-                  </a>
-                </td>
-              </tr>
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <td className="w-4 p-4">
-                  <div className="flex items-center">
-                    <input
-                      id="checkbox-table-search-2"
-                      type="checkbox"
-                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    <img
+                      className="w-10 h-10 rounded-full"
+                      src={user.photo}
+                      alt={user.name}
                     />
-                    <label
-                      htmlFor="checkbox-table-search-2"
-                      className="sr-only"
+                    <div className="ps-3">
+                      <div className="text-base font-semibold">
+                        {" "}
+                        {user.name}
+                      </div>
+                      <div className="font-normal text-gray-500">
+                        {user.email}
+                      </div>
+                    </div>
+                  </th>
+                  <td className="px-6 py-4">
+                    {user.role ? user.role : "Partcipant"}
+                  </td>
+                  {/* <td className="px-6 py-4">
+                <div className="flex items-center">
+                  <div className="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>{" "}
+                  Online
+                </div>
+              </td> */}
+                  <td className="px-6 py-4">
+                    <div className="flex items-center">
+                      <div>
+                        {/* <label htmlFor="roleSelect">Select Role:</label> */}
+                        <select
+                         id={`roleSelect-${user._id}`}
+                          value={newRole}
+                          onChange={(e) => setNewRole(e.target.value)}
+                        >
+                          <option value="">Select Role</option>
+                          <option value="admin">Admin</option>
+                          <option value="creator">Creator</option>
+                          <option value="user">User</option>
+                        </select>
+                        <button className="btn btn-sm" onClick={()=>handleUpdateRole(user)}>Update Role</button>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="px-6 py-4">
+                    {/* <!-- Modal toggle --> */}
+                    <a
+                      href="#"
+                      type="button"
+                      data-modal-target="editUserModal"
+                      data-modal-show="editUserModal"
+                      className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                     >
-                      checkbox
-                    </label>
-                  </div>
-                </td>
-                <th
-                  scope="row"
-                  className="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  <img
-                    className="w-10 h-10 rounded-full"
-                    src="/docs/images/people/profile-picture-3.jpg"
-                    alt="Jese image"
-                  />
-                  <div className="ps-3">
-                    <div className="text-base font-semibold">Bonnie Green</div>
-                    <div className="font-normal text-gray-500">
-                      bonnie@flowbite.com
-                    </div>
-                  </div>
-                </th>
-                <td className="px-6 py-4">Designer</td>
-                <td className="px-6 py-4">
-                  <div className="flex items-center">
-                    <div className="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>{" "}
-                    Online
-                  </div>
-                </td>
-                <td className="px-6 py-4">
-                  {/* <!-- Modal toggle --> */}
-                  <a
-                    href="#"
-                    type="button"
-                    data-modal-show="editUserModal"
-                    className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                  >
-                    Edit user
-                  </a>
-                </td>
-              </tr>
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <td className="w-4 p-4">
-                  <div className="flex items-center">
-                    <input
-                      id="checkbox-table-search-2"
-                      type="checkbox"
-                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                    />
-                    <label
-                      htmlFor="checkbox-table-search-2"
-                      className="sr-only"
-                    >
-                      checkbox
-                    </label>
-                  </div>
-                </td>
-                <th
-                  scope="row"
-                  className="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  <img
-                    className="w-10 h-10 rounded-full"
-                    src="/docs/images/people/profile-picture-2.jpg"
-                    alt="Jese image"
-                  />
-                  <div className="ps-3">
-                    <div className="text-base font-semibold">Jese Leos</div>
-                    <div className="font-normal text-gray-500">
-                      jese@flowbite.com
-                    </div>
-                  </div>
-                </th>
-                <td className="px-6 py-4">Vue JS Developer</td>
-                <td className="px-6 py-4">
-                  <div className="flex items-center">
-                    <div className="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>{" "}
-                    Online
-                  </div>
-                </td>
-                <td className="px-6 py-4">
-                  {/* <!-- Modal toggle --> */}
-                  <a
-                    href="#"
-                    type="button"
-                    data-modal-show="editUserModal"
-                    className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                  >
-                    Edit user
-                  </a>
-                </td>
-              </tr>
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <td className="w-4 p-4">
-                  <div className="flex items-center">
-                    <input
-                      id="checkbox-table-search-2"
-                      type="checkbox"
-                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                    />
-                    <label
-                      htmlFor="checkbox-table-search-2"
-                      className="sr-only"
-                    >
-                      checkbox
-                    </label>
-                  </div>
-                </td>
-                <th
-                  scope="row"
-                  className="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  <img
-                    className="w-10 h-10 rounded-full"
-                    src="/docs/images/people/profile-picture-5.jpg"
-                    alt="Jese image"
-                  />
-                  <div className="ps-3">
-                    <div className="text-base font-semibold">Thomas Lean</div>
-                    <div className="font-normal text-gray-500">
-                      thomes@flowbite.com
-                    </div>
-                  </div>
-                </th>
-                <td className="px-6 py-4">UI/UX Engineer</td>
-                <td className="px-6 py-4">
-                  <div className="flex items-center">
-                    <div className="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>{" "}
-                    Online
-                  </div>
-                </td>
-                <td className="px-6 py-4">
-                  {/* <!-- Modal toggle --> */}
-                  <a
-                    href="#"
-                    type="button"
-                    data-modal-show="editUserModal"
-                    className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                  >
-                    Edit user
-                  </a>
-                </td>
-              </tr>
-              <tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <td className="w-4 p-4">
-                  <div className="flex items-center">
-                    <input
-                      id="checkbox-table-search-3"
-                      type="checkbox"
-                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                    />
-                    <label
-                      htmlFor="checkbox-table-search-3"
-                      className="sr-only"
-                    >
-                      checkbox
-                    </label>
-                  </div>
-                </td>
-                <th
-                  scope="row"
-                  className="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  <img
-                    className="w-10 h-10 rounded-full"
-                    src="/docs/images/people/profile-picture-4.jpg"
-                    alt="Jese image"
-                  />
-                  <div className="ps-3">
-                    <div className="text-base font-semibold">
-                      Leslie Livingston
-                    </div>
-                    <div className="font-normal text-gray-500">
-                      leslie@flowbite.com
-                    </div>
-                  </div>
-                </th>
-                <td className="px-6 py-4">SEO Specialist</td>
-                <td className="px-6 py-4">
-                  <div className="flex items-center">
-                    <div className="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div>{" "}
-                    Offline
-                  </div>
-                </td>
-                <td className="px-6 py-4">
-                  {/* <!-- Modal toggle --> */}
-                  <a
-                    href="#"
-                    type="button"
-                    data-modal-show="editUserModal"
-                    className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                  >
-                    Edit user
-                  </a>
-                </td>
-              </tr>
+                      Edit user
+                    </a>
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
           {/* <!-- Edit user modal --> */}
