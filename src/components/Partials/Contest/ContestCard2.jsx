@@ -1,18 +1,29 @@
-import img from "../../../assets/images/Programming_Contests.jpg" 
-const ContestCard2 = () => {
+/* eslint-disable react/prop-types */
+
+const ContestCard2 = ({ item }) => {
+  const { name, fee, prize, deadline, image, details } = item;
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-      <img
-        className="w-full"
-        src={img}
-        alt="Sunset in the mountains"
-      />
-      <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-slate-200">
+      <img className="w-full" src={image} alt="Sunset in the mountains" />
+      <div className="px-6 py-4 text-left">
+        <div className="font-bold mb-2 text-lg font-cinzel text-violet-400">
+          {" "}
+          {name}
+        </div>
+        <p>
+          {" "}
+          <span className="font-bold">Participation Fee:</span>$ {fee}
+        </p>
+        <p>
+          {" "}
+          <span className="font-bold">Winning Prize :</span> {prize}
+        </p>
+        <p>
+          {" "}
+          <span className="font-bold">Deadline:</span> {deadline}
+        </p>
         <p className="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-          quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
-          nihil.
+          <span className="font-bold">Details</span> {details}
         </p>
       </div>
       <div className="px-6 pt-4 pb-2">

@@ -1,5 +1,6 @@
 import Marquee from "react-fast-marquee";
-import ContestCard2 from "../../../components/Partials/Contest/ContestCard2";
+
+import CreatorCard from "../../../components/Partials/Contest/CreatorCard";
 const BestCreators = () => {
   return (
     <div className="py-10">
@@ -8,13 +9,13 @@ const BestCreators = () => {
       <div>
         <Marquee>
           <div className="m-4">
-            <ContestCard2></ContestCard2>
+            <CreatorCard></CreatorCard>
           </div>
           <div className="m-4">
-            <ContestCard2></ContestCard2>
+          <CreatorCard></CreatorCard>
           </div>
           <div className="m-4">
-            <ContestCard2></ContestCard2>
+          <CreatorCard></CreatorCard>
           </div>
          
         </Marquee>

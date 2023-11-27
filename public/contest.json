@@ -1,0 +1,184 @@
+[
+    {
+      "name": "Call of Duty Championship",
+      "category": "gaming contest",
+      "fee": 15,
+      "prize": "PS5 Gaming Console",
+      "deadline": "2023-12-29",
+      "details": "Immerse yourself in the heart-pounding action of the 'Call of Duty' Championship! Join this epic showdown of skill and strategy, showcasing your gaming prowess. The grand prize is the highly coveted PS5 gaming console – the pinnacle of next-gen gaming. Don't miss your chance to dominate the battlefield!",
+      "instruction": "Welcome, brave participants, to the 'Call of Duty' Championship! Ensure you're registered, have the game installed, review the rules, be punctual, communicate with fellow participants, play fair, and most importantly, savor the adrenaline rush!",
+      "image": "https://i.ibb.co/X3LFcc8/blue-4186599-1920.jpg"
+    },
+    {
+      "name": "Business Innovation Challenge",
+      "category": "business contest",
+      "fee": 20,
+      "prize": "Entrepreneurship Workshop Pass",
+      "deadline": "2023-11-30",
+      "details": "Participate in the Business Innovation Challenge to unlock your potential as an entrepreneur! This contest is designed to push your business acumen to new heights. The grand prize is an exclusive pass to an Entrepreneurship Workshop.",
+      "instruction": "Dear participants, welcome to the Business Innovation Challenge! Ensure your registration, familiarize yourself with the business landscape, adhere to the contest timeline, and most importantly, present your innovative ideas with passion and clarity!",
+      "image": "https://i.ibb.co/ZM1Sf9h/business-690553-1920.jpg"
+    },
+    {
+      "name": "Medical Research Excellence Award",
+      "category": "medical contest",
+      "fee": 25,
+      "prize": "Medical Research Grant",
+      "deadline": "2023-12-15",
+      "details": "Engage in the Medical Research Excellence Award, where groundbreaking ideas in medical research are celebrated! Seize the opportunity to receive a prestigious Medical Research Grant.",
+      "instruction": "Greetings, innovators! Get ready for the Medical Research Excellence Award! Ensure your registration, familiarize yourself with the latest medical advancements, adhere to the submission guidelines, and present your research with clarity and impact!",
+      "image": "https://i.ibb.co/kH6rqRG/medical-563427-1920.jpg"
+    },
+    {
+      "name": "Creative Writing Showcase",
+      "category": "article writing",
+      "fee": 10,
+      "prize": "Published Article Feature",
+      "deadline": "2024-01-10",
+      "details": "Ignite your creativity in the Creative Writing Showcase! Submit your best work for a chance to be featured with a published article. Express yourself and captivate the audience with your literary brilliance.",
+      "instruction": "Writers, welcome to the Creative Writing Showcase! Ensure your registration, craft your masterpiece, adhere to the submission guidelines, and most importantly, let your creativity flow freely!",
+      "image": "https://i.ibb.co/2cc3Wm6/writing-923413-1920.jpg"
+    },
+    {
+        "name": "Epic Esports Showdown",
+        "category": "gaming contest",
+        "fee": 12,
+        "prize": "Gaming Peripheral Bundle",
+        "deadline": "2023-12-20",
+        "details": "Gear up for the Epic Esports Showdown! Immerse yourself in thrilling gaming action, showcasing your skills for a chance to win an exclusive Gaming Peripheral Bundle.",
+        "instruction": "Hello gamers! Welcome to the Epic Esports Showdown! Ensure your registration, have your gaming setup ready, review the rules, and get ready for an adrenaline-fueled battle!",
+        "image": "https://i.ibb.co/ZHkG7QZ/esports-932956-1920.jpg"
+      },
+      {
+        "name": "Tech Startup Challenge",
+        "category": "business contest",
+        "fee": 18,
+        "prize": "Seed Funding and Mentorship",
+        "deadline": "2023-11-25",
+        "details": "Join the Tech Startup Challenge and pitch your innovative business idea! The winning startup receives seed funding and valuable mentorship to kickstart their entrepreneurial journey.",
+        "instruction": "Entrepreneurs, welcome to the Tech Startup Challenge! Register your startup, perfect your pitch, and get ready to impress our panel of industry experts.",
+        "image": "https://i.ibb.co/SNddzN2/startup-849804-1920.jpg"
+      },
+      {
+        "name": "Global Health Symposium",
+        "category": "medical contest",
+        "fee": 30,
+        "prize": "International Medical Conference Pass",
+        "deadline": "2023-12-10",
+        "details": "Participate in the Global Health Symposium and contribute to the future of healthcare! The winning entry receives an all-access pass to an International Medical Conference.",
+        "instruction": "Medical professionals, join the Global Health Symposium! Register your research, share your findings, and be part of a global conversation on advancing healthcare.",
+        "image": "https://i.ibb.co/5kPn8GR/healthcare-4386462-1920.jpg"
+      },
+      {
+        "name": "Sci-Fi Short Story Contest",
+        "category": "article writing",
+        "fee": 8,
+        "prize": "Featured Publication in Sci-Fi Magazine",
+        "deadline": "2024-01-05",
+        "details": "Unleash your imagination in the Sci-Fi Short Story Contest! Submit your gripping tales for a chance to be featured in a renowned Sci-Fi Magazine.",
+        "instruction": "Sci-Fi enthusiasts, welcome to the Short Story Contest! Craft your futuristic narratives, adhere to the submission guidelines, and transport readers to otherworldly realms.",
+        "image": "https://i.ibb.co/0JvBXFJ/sci-fi-2971844-1920.jpg"
+      },
+      {
+        "name": "Speedrunner's Challenge",
+        "category": "gaming contest",
+        "fee": 10,
+        "prize": "High-Performance Gaming PC",
+        "deadline": "2024-02-15",
+        "details": "Get ready for the Speedrunner's Challenge! Compete in a race against the clock, showcasing your gaming skills for a chance to win a high-performance Gaming PC.",
+        "instruction": "Speedrunners, welcome to the challenge! Register, practice your speedrunning techniques, review the rules, and prepare for an adrenaline-pumping competition!",
+        "image": "https://i.ibb.co/QdRGNLJ/gaming-pc-1545453-1920.jpg"
+      },
+      {
+        "name": "Innovation in Sustainability",
+        "category": "business contest",
+        "fee": 15,
+        "prize": "Green Tech Innovation Grant",
+        "deadline": "2024-02-10",
+        "details": "Join the Innovation in Sustainability contest! Present your groundbreaking green tech ideas for a chance to win a Green Tech Innovation Grant.",
+        "instruction": "Environmental innovators, welcome! Register your sustainable solutions, perfect your pitch, and be part of the movement towards a greener future.",
+        "image": "https://i.ibb.co/S0XjrF4/sustainability-2137270-1920.jpg"
+      },
+      {
+        "name": "Neuroscience Research Symposium",
+        "category": "medical contest",
+        "fee": 25,
+        "prize": "Neuroscience Research Fellowship",
+        "deadline": "2024-02-28",
+        "details": "Contribute to the field of neuroscience in the Research Symposium! The winning entry receives a prestigious Neuroscience Research Fellowship.",
+        "instruction": "Neuroscientists, join the symposium! Register your research, share your findings, and engage in discussions shaping the future of neuroscience.",
+        "image": "https://i.ibb.co/X7Jxj2H/neuroscience-1741110-1920.jpg"
+      },
+      {
+        "name": "Travel Essay Exploration",
+        "category": "article writing",
+        "fee": 12,
+        "prize": "Cultural Immersion Trip",
+        "deadline": "2024-03-05",
+        "details": "Embark on a literary journey with the Travel Essay Exploration! Submit your captivating travel stories for a chance to win a Cultural Immersion Trip.",
+        "instruction": "Travel writers, this is your chance! Register your essays, transport readers to distant lands, and share the essence of your journeys.",
+        "image": "https://i.ibb.co/vmHgNq4/travel-3347223-1920.jpg"
+      },
+      {
+        "name": "VR Esports Showdown",
+        "category": "gaming contest",
+        "fee": 18,
+        "prize": "Oculus Quest 2 VR Headset",
+        "deadline": "2024-03-15",
+        "details": "Dive into the immersive world of VR gaming in the VR Esports Showdown! Compete against fellow gamers for a chance to win the latest Oculus Quest 2 VR Headset.",
+        "instruction": "VR enthusiasts, welcome to the showdown! Register, ensure your VR setup is ready, review the rules, and get ready for a virtual gaming experience like never before!",
+        "image": "https://i.ibb.co/GHg4JjT/vr-3295151-1920.jpg"
+      },
+      {
+        "name": "Digital Innovation Challenge",
+        "category": "business contest",
+        "fee": 22,
+        "prize": "Digital Innovation Incubation",
+        "deadline": "2024-03-10",
+        "details": "Revolutionize the digital landscape in the Digital Innovation Challenge! Present your cutting-edge digital solutions for a chance to win Digital Innovation Incubation.",
+        "instruction": "Digital pioneers, welcome! Register your innovations, perfect your pitch, and be part of the digital revolution shaping the future.",
+        "image": "https://i.ibb.co/gw9G8Yq/digital-3309879-1920.jpg"
+      },
+      {
+        "name": "Precision Medicine Symposium",
+        "category": "medical contest",
+        "fee": 28,
+        "prize": "Precision Medicine Research Grant",
+        "deadline": "2024-03-25",
+        "details": "Contribute to precision medicine in the Symposium! The winning entry receives a prestigious Precision Medicine Research Grant.",
+        "instruction": "Medical researchers, join the symposium! Register your research, share your findings, and contribute to advancements in precision medicine.",
+        "image": "https://i.ibb.co/kXz7bsH/medical-3443789-1920.jpg"
+      },
+      {
+        "name": "Sci-Fi Poetry Contest",
+        "category": "article writing",
+        "fee": 15,
+        "prize": "Featured Poetry Collection",
+        "deadline": "2024-04-05",
+        "details": "Express your futuristic visions in the Sci-Fi Poetry Contest! Submit your sci-fi-inspired poems for a chance to be featured in a poetry collection.",
+        "instruction": "Poets of the future, welcome! Register your poetic creations, let your imagination soar, and contribute to a collection of sci-fi poetry.",
+        "image": "https://i.ibb.co/wJQVV3X/poetry-1259937-1920.jpg"
+      },
+      {
+        "name": "Retro Gaming Challenge",
+        "category": "gaming contest",
+        "fee": 12,
+        "prize": "Vintage Arcade Machine",
+        "deadline": "2024-04-10",
+        "details": "Take a trip down memory lane in the Retro Gaming Challenge! Compete in classic games for a chance to win a Vintage Arcade Machine.",
+        "instruction": "Gamers, welcome to the retro challenge! Register, dust off your favorite classic games, and get ready for a nostalgic gaming experience!",
+        "image": "https://i.ibb.co/S7wNbpw/retro-2410654-1920.jpg"
+      },
+      {
+        "name": "Environmental Awareness Essay",
+        "category": "article writing",
+        "fee": 10,
+        "prize": "Tree Planting Expedition",
+        "deadline": "2024-04-15",
+        "details": "Raise awareness for the environment in the Environmental Awareness Essay contest! Submit impactful essays for a chance to participate in a Tree Planting Expedition.",
+        "instruction": "Environmental advocates, welcome! Register your essays, share your insights, and contribute to a greener planet through a tree planting expedition.",
+        "image": "https://i.ibb.co/RDwH7hD/environment-5882368-1920.jpg"
+      }
+    
+  ]
+  

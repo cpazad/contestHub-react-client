@@ -1,0 +1,180 @@
+{
+    "name": "Cyberpunk Gaming Tournament",
+    "category": "gaming contest",
+    "fee": 15,
+    "prize": "Custom Gaming PC Rig",
+    "deadline": "2024-05-01",
+    "details": "Step into the futuristic world of Cyberpunk in the Gaming Tournament! Compete for glory and win a Custom Gaming PC Rig, equipped for the most immersive gaming experience.",
+    "instruction": "Gaming enthusiasts, welcome to the Cyberpunk Gaming Tournament! Register, gear up your gaming station, review the rules, and get ready to embark on a cybernetic adventure!",
+    "image": "https://i.ibb.co/1LHfR1H/cyberpunk-3762222-1920.jpg"
+  },
+  {
+    "name": "Innovative Tech Startups Showcase",
+    "category": "business contest",
+    "fee": 25,
+    "prize": "Tech Innovation Expo Feature",
+    "deadline": "2024-04-25",
+    "details": "Unveil your groundbreaking tech innovations in the Innovative Tech Startups Showcase! Showcase your startup for a chance to be featured in a Tech Innovation Expo.",
+    "instruction": "Tech entrepreneurs, welcome to the showcase! Register your startup, refine your pitch, and present your tech marvels to industry leaders and investors.",
+    "image": "https://i.ibb.co/gtZgww2/tech-startup-1200.jpg"
+  },
+  {
+    "name": "Future of Medicine Symposium",
+    "category": "medical contest",
+    "fee": 30,
+    "prize": "Medical Innovation Grant",
+    "deadline": "2024-05-10",
+    "details": "Shape the future of medicine in the Symposium! The winning entry receives a prestigious Medical Innovation Grant to support groundbreaking healthcare advancements.",
+    "instruction": "Medical visionaries, join the symposium! Register your medical breakthroughs, share your findings, and contribute to the evolution of healthcare.",
+    "image": "https://i.ibb.co/RztXCXy/medical-technology-3008500-1920.jpg"
+  },
+  {
+    "name": "Historical Fiction Writing Contest",
+    "category": "article writing",
+    "fee": 12,
+    "prize": "Published Historical Fiction Anthology",
+    "deadline": "2024-05-15",
+    "details": "Travel through time in the Historical Fiction Writing Contest! Submit your captivating historical tales for a chance to be featured in a published anthology.",
+    "instruction": "History enthusiasts, welcome to the contest! Register your historical fiction, adhere to the submission guidelines, and transport readers to bygone eras.",
+    "image": "https://i.ibb.co/YXQHZ3J/historical-4535419-1920.jpg"
+  },
+  {
+    "name": "Virtual Reality Film Challenge",
+    "category": "business contest",
+    "fee": 18,
+    "prize": "VR Filmmaking Equipment Bundle",
+    "deadline": "2024-06-01",
+    "details": "Create immersive experiences in the Virtual Reality Film Challenge! Craft a VR film for a chance to win a VR Filmmaking Equipment Bundle.",
+    "instruction": "Filmmakers and storytellers, welcome to the challenge! Register, unleash your creativity in VR, and bring your narrative to life in the virtual realm.",
+    "image": "https://i.ibb.co/YhBsXwh/vr-filmmaking-3740219-1920.jpg"
+  },
+  {
+    "name": "Global Coding Championship",
+    "category": "writing contest",
+    "fee": 20,
+    "prize": "Coding Master Trophy",
+    "deadline": "2024-06-15",
+    "details": "Showcase your coding prowess in the Global Coding Championship! Compete against the best for a chance to win the prestigious Coding Master Trophy.",
+    "instruction": "Codemasters, welcome to the championship! Register, sharpen your coding skills, review the challenges, and get ready to prove your coding expertise.",
+    "image": "https://i.ibb.co/V2B2GCr/coding-1870530-1920.jpg"
+  },
+  {
+    "name": "Digital Art Showcase",
+    "category": "business contest",
+    "fee": 15,
+    "prize": "Digital Art Exhibition Feature",
+    "deadline": "2024-07-01",
+    "details": "Express your creativity in the Digital Art Showcase! Submit your digital masterpieces for a chance to be featured in a prestigious art exhibition.",
+    "instruction": "Digital artists, welcome to the showcase! Register your artworks, unleash your creativity, and contribute to a digital art celebration.",
+    "image": "https://i.ibb.co/n7K5zGR/digital-art-2190900-1920.jpg"
+  },
+  {
+    "name": "Space Exploration Photography Contest",
+    "category": "business contest",
+    "fee": 18,
+    "prize": "Telescope and Astrophotography Kit",
+    "deadline": "2024-07-15",
+    "details": "Capture the wonders of space in the Photography Contest! Submit your space-themed photos for a chance to win a Telescope and Astrophotography Kit.",
+    "instruction": "Astrophotographers, welcome to the contest! Register your space captures, showcase the beauty of the cosmos, and contribute to a celestial gallery.",
+    "image": "https://i.ibb.co/6s5Zb5q/space-1869725-1920.jpg"
+  },
+  {
+    "name": "Eco-Friendly Product Design Challenge",
+    "category": "design contest",
+    "fee": 22,
+    "prize": "Green Design Award",
+    "deadline": "2024-08-01",
+    "details": "Design for a sustainable future in the Product Design Challenge! Create eco-friendly products for a chance to win the prestigious Green Design Award.",
+    "instruction": "Designers and innovators, welcome to the challenge! Register your eco-friendly designs, showcase sustainable solutions, and contribute to a greener world.",
+    "image": "https://i.ibb.co/JttdpSv/design-3852209-1920.jpg"
+  },
+  {
+    "name": "Interactive Robotics Hackathon",
+    "category": "writing contest",
+    "fee": 25,
+    "prize": "Robotics Innovation Grant",
+    "deadline": "2024-08-15",
+    "details": "Innovate in the Interactive Robotics Hackathon! Create interactive robotics solutions for a chance to win a Robotics Innovation Grant.",
+    "instruction": "Robotics enthusiasts, welcome to the hackathon! Register, unleash your creativity in robotics, review the challenges, and be part of the future of automation.",
+    "image": "https://i.ibb.co/7jbhfYp/robotics-1280978-1920.jpg"
+  },
+  {
+    "name": "Fantasy Short Film Contest",
+    "category": "business contest",
+    "fee": 20,
+    "prize": "Fantasy Film Festival Premiere",
+    "deadline": "2024-09-01",
+    "details": "Bring your fantasies to life in the Short Film Contest! Create a fantasy short film for a chance to premiere at a Fantasy Film Festival.",
+    "instruction": "Filmmakers and dreamweavers, welcome to the contest! Register, weave fantastical tales, and transport audiences to magical realms in your short film.",
+    "image": "https://i.ibb.co/6FmDyK1/fantasy-931632-1920.jpg"
+  },
+  {
+    "name": "Digital Marketing Excellence Awards",
+    "category": "business contest",
+    "fee": 18,
+    "prize": "Digital Marketing Masterclass Pass",
+    "deadline": "2024-09-15",
+    "details": "Excel in digital marketing in the Excellence Awards! Showcase your campaigns for a chance to win a Digital Marketing Masterclass Pass.",
+    "instruction": "Digital marketers, welcome to the awards! Register your outstanding campaigns, present your strategies, and be recognized for digital marketing excellence.",
+    "image": "https://i.ibb.co/Z2tCdgX/marketing-1493378-1920.jpg"
+  },
+  {
+    "name": "Bioinformatics Innovation Challenge",
+    "category": "writing contest",
+    "fee": 28,
+    "prize": "Bioinformatics Research Grant",
+    "deadline": "2024-10-01",
+    "details": "Revolutionize bioinformatics in the Innovation Challenge! Propose innovative solutions for a chance to win a Bioinformatics Research Grant.",
+    "instruction": "Bioinformaticians, welcome to the challenge! Register, analyze, and present your cutting-edge solutions to contribute to advancements in bioinformatics.",
+    "image": "https://i.ibb.co/02d47vP/bioinformatics-369900-1920.jpg"
+  },
+  {
+    "name": "Modern Art Sculpture Exhibition",
+    "category": "design contest",
+    "fee": 15,
+    "prize": "Modern Art Sculpture Display",
+    "deadline": "2024-10-15",
+    "details": "Shape the world of modern art in the Sculpture Exhibition! Create unique sculptures for a chance to have your work displayed in a modern art gallery.",
+    "instruction": "Sculptors and artists, welcome to the exhibition! Register your sculptural masterpieces, express your artistic vision, and contribute to the world of modern art.",
+    "image": "https://i.ibb.co/1dSpm7t/sculpture-739586-1920.jpg"
+  },
+  {
+    "name": "Augmented Reality Game Jam",
+    "category": "gaming contest",
+    "fee": 22,
+    "prize": "AR Gaming Development Kit",
+    "deadline": "2024-11-01",
+    "details": "Invent the future of gaming in the AR Game Jam! Develop augmented reality games for a chance to win an AR Gaming Development Kit.",
+    "instruction": "Game developers, welcome to the jam! Register, immerse yourself in AR development, review the challenges, and be part of the evolution of gaming.",
+    "image": "https://i.ibb.co/84v5T3y/augmented-reality-1684541-1920.jpg"
+  },
+  {
+    "name": "Culinary Innovation Challenge",
+    "category": "business contest",
+    "fee": 18,
+    "prize": "Culinary Arts Scholarship",
+    "deadline": "2024-11-15",
+    "details": "Innovate in the Culinary Innovation Challenge! Create culinary masterpieces for a chance to win a Culinary Arts Scholarship.",
+    "instruction": "Chefs and food innovators, welcome to the challenge! Register your culinary creations, showcase your skills, and contribute to the evolution of gastronomy.",
+    "image": "https://i.ibb.co/bsm0wM3/culinary-2105072-1920.jpg"
+  },
+  {
+    "name": "Green Architecture Design Competition",
+    "category": "design contest",
+    "fee": 25,
+    "prize": "Sustainable Architecture Award",
+    "deadline": "2024-12-01",
+    "details": "Design for a sustainable future in the Architecture Design Competition! Create green architectural concepts for a chance to win the Sustainable Architecture Award.",
+    "instruction": "Architects and designers, welcome to the competition! Register your sustainable designs, present eco-friendly concepts, and contribute to green architecture.",
+    "image": "https://i.ibb.co/VBkDqWZ/architecture-3771738-1920.jpg"
+  },
+  {
+    "name": "Digital Storytelling Contest",
+    "category": "business contest",
+    "fee": 20,
+    "prize": "Digital Storytelling Workshop Pass",
+    "deadline": "2024-12-15",
+    "details": "Craft digital narratives in the Storytelling Contest! Submit your stories for a chance to win a Digital Storytelling Workshop Pass.",
+    "instruction": "Storytellers, welcome to the contest! Register your digital narratives, captivate audiences, and contribute to the art of storytelling in the digital age.",
+    "image": "https://i.ibb.co/vLbTtkP/storytelling-3290657-1920.jpg"
+  }

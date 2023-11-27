@@ -22,7 +22,7 @@ const ContestCard = () => {
     // </div>
     <div className="card  lg:card-side bg-base-100 shadow-xl">
       <figure className="lg:w-2/5">
-        <img className="h-full mask mask-hexagon-2 " src={pcontest} alt="Album" />
+        <img className="h-full mask mask-parallelogram " src={pcontest} alt="Album" />
       </figure>
       <div className="card-body text-left lg:w-3/5  ">
         <h2 className="card-title"> Contest Name: Programming contest </h2>

@@ -7,7 +7,7 @@ const PopularContests = () => {
     <div className="py-20">
       {" "}
       <h2 className="text-4xl font-bold">Popular Contests </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 sm:px-5 sm:py-10">
+      <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 sm:px-40 sm:py-10">
         <ContestCard></ContestCard>
         <ContestCard></ContestCard>
         <ContestCard></ContestCard>

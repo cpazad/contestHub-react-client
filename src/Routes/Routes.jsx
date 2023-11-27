@@ -21,6 +21,7 @@ import Creators from "../pages/Dashboard/Creator/Creators";
 import AllContest from "../pages/All Contest/AllContest";
 import Pricing from "../pages/Pricing/Pricing";
 import Leaderboard from "../pages/All Contest/Leaderboard";
+import UpdateContest from "../pages/Dashboard/Creator/UpdateContest";
 
 const Router = createBrowserRouter([
   {
@@ -80,6 +81,11 @@ const Router = createBrowserRouter([
           {
             path: "addnewcontest",
             element: <AddNewContest></AddNewContest>,
+          },
+          {
+            path: 'updateContest/:id',
+            element: <UpdateContest></UpdateContest>,
+            loader: ({params}) => fetch(`http://localhost:5000/contest/${params.id}`)
           },
           {
             path: "mycontests",
