@@ -11,7 +11,7 @@ const Contact = () => {
               et a id nisi.
             </p>
           </div>
-          <div className="card shrink-0 w-full md:w-1/2 max-w-sm shadow-2xl bg-slate-400">
+          <div className="card shrink-0 w-full md:w-1/2 max-w-sm shadow-2xl bg-slate-100">
             <form className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -37,7 +37,7 @@ const Contact = () => {
                 
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary bg-red-800">Login</button>
+                <button className="btn btn-primary bg-violet-400">Login</button>
               </div>
             </form>
           </div>

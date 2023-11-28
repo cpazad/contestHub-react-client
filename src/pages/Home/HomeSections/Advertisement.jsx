@@ -3,7 +3,7 @@ const Advertisement = () => {
   return (
     <div>
       {" "}
-      <h2>Advertisement</h2>
+      {/* <h2>Advertisement</h2> */}
       <div>
         <img src={advertisement} alt="" />
       </div>

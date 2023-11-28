@@ -3,7 +3,6 @@ import Dashboard from "../Layouts/Dashboard";
 import Roots from "../Layouts/Roots";
 import Login from "../Login/Login";
 import Registration from "../Login/Registration";
-import About from "../pages/Home/HomeSections/About";
 import Contact from "../pages/Contact/Contact";
 import Admin from "../pages/Dashboard/Admin/Admin";
 import ErrorPage from "../pages/Error/ErrorPage";
@@ -12,7 +11,7 @@ import ManageUsers from "../pages/Dashboard/Admin/ManageUsers";
 import ManageContests from "../pages/Dashboard/Admin/ManageContests";
 import AddNewContest from "../pages/Dashboard/Creator/AddNewContest";
 import MyContests from "../pages/Dashboard/Creator/MyContests";
-import ContestDetails from "../pages/Dashboard/Creator/ContestDetails";
+import ContestDetails from "../components/Partials/Contest/ContestDetails";
 import MyProfile from "../pages/Dashboard/User/MyProfile";
 import ParticipatedContests from "../pages/Dashboard/User/ParticipatedContests";
 import WinningContests from "../pages/Dashboard/User/WinningContests";
@@ -22,6 +21,7 @@ import AllContest from "../pages/All Contest/AllContest";
 import Pricing from "../pages/Pricing/Pricing";
 import Leaderboard from "../pages/All Contest/Leaderboard";
 import UpdateContest from "../pages/Dashboard/Creator/UpdateContest";
+import Test from "../pages/Test/Test";
 
 const Router = createBrowserRouter([
   {
@@ -34,8 +34,14 @@ const Router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/allcontest",
+        path: "/allcontest/:category",
         element: <AllContest></AllContest>,
+      },
+      {
+        path: "/contest/:id",
+        element: <ContestDetails></ContestDetails>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/contest/${params.id}`),
       },
       {
         path: "/pricing",
@@ -56,6 +62,10 @@ const Router = createBrowserRouter([
       {
         path: "/registration",
         element: <Registration></Registration>,
+      },
+      {
+        path: "/test",
+        element: <Test></Test>,
       },
       {
         path: "/dashboard",
@@ -83,9 +93,10 @@ const Router = createBrowserRouter([
             element: <AddNewContest></AddNewContest>,
           },
           {
-            path: 'updateContest/:id',
+            path: "updateContest/:id",
             element: <UpdateContest></UpdateContest>,
-            loader: ({params}) => fetch(`http://localhost:5000/contest/${params.id}`)
+            loader: ({ params }) =>
+              fetch(`http://localhost:5000/contest/${params.id}`),
           },
           {
             path: "mycontests",

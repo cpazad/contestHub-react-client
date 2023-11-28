@@ -112,9 +112,9 @@ const ManageContests = () => {
                 {/* <td className="px-6 py-4">{item.deadline}</td> */}
                 <td className="px-6 py-4">
                 {item.approvalStatus === 'Pending' ? (
-                      <div className="h-2.5 w-2.5 rounded-full bg-red-500 me-2"></div>
+                      <div className="h-2.5 w-2.5 rounded-full bg-red-500 me-2"> Pending </div>
                     ) : (
-                      <div className="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>
+                      <div className="h-2.5 w-2.5 rounded-full bg-green-500 me-2">Approved </div>
                     )}
                     {item.approvalStatus}
                 </td>

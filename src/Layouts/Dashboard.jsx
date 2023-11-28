@@ -14,8 +14,8 @@ import {
 
 const Dashboard = () => {
   return (
-    <div className="flex">
-      <div className="w-64 min-h-screen bg-gray-800">
+    <div className="flex lg:flex-row flex-col">
+      <div className="lg:w-64 w-full min-h-screen bg-gray-800">
         <ul className="menu p-4 text-stone-50 ">
           <li>
             <NavLink

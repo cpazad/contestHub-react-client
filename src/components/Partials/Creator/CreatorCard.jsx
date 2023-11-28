@@ -16,7 +16,7 @@ const CreatorCard = () => {
           <p> Number of Contest Created : 5 </p>
           <p> Highest Participant : 250 </p>
           <div className="card-actions py-2">
-            <XButton> See More </XButton>
+            <XButton> See My Contest </XButton>
           </div>
         </div>
       </div>{" "}

@@ -7,10 +7,10 @@ const Admin = () => {
       {" "}
       <iframe
         src="https://giphy.com/embed/xUStFKHmuFPYk"
-        width="980"
+        width="680"
         height="275"
         frameBorder="0"
-        className="giphy-embed"
+        className="giphy-embed mx-auto"
         allowFullScreen
       ></iframe>{" "}
       <div className="mt-20">

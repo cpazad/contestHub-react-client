@@ -134,7 +134,7 @@ const Navbar = () => {
                         <NavLink
                           to="/dashboard"
                           style={({ isActive }) => ({
-                            color: isActive ? "blue" : "white",
+                            color: isActive ? "white" : "white",
                           
                           })}
                         >
