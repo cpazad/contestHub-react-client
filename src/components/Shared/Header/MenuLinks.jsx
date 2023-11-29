@@ -75,7 +75,7 @@ const MenuLinks = () => {
           </NavLink>
         </div>
       </i>
-      <i>
+      {/* <i>
         <div style={linkStyle}>
           <NavLink
             to="/test"
@@ -86,7 +86,7 @@ const MenuLinks = () => {
             Test
           </NavLink>
         </div>
-      </i>
+      </i> */}
     </>
   );
 };

@@ -41,7 +41,8 @@ const Router = createBrowserRouter([
         path: "/contest/:id",
         element: <ContestDetails></ContestDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/contest/${params.id}`),
+          //fetch(`http://localhost:5000/contest/${params.id}`),
+          fetch(`https://contesthub-server-side.vercel.app/contest/${params.id}`),
       },
       {
         path: "/pricing",
@@ -97,6 +98,7 @@ const Router = createBrowserRouter([
             element: <UpdateContest></UpdateContest>,
             loader: ({ params }) =>
               fetch(`http://localhost:5000/contest/${params.id}`),
+             // fetch(`https://contesthub-server-side.vercel.app/contest/${params.id}`),
           },
           {
             path: "mycontests",

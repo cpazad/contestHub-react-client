@@ -32,7 +32,7 @@ const AllContest = () => {
             <Tab> Gaming Contest </Tab>
           </TabList>
           <TabPanel>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:py-5 ">
+            <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 sm:px-40 md:px-5 gap-4 sm:py-5 ">
               {
                 business.map(item => <ContestCard2 key={item._id} item={item}></ContestCard2> )
               }
@@ -40,7 +40,7 @@ const AllContest = () => {
             </div>
           </TabPanel>
           <TabPanel>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:py-5 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 sm:px-40 md:px-5 gap-4 sm:py-5 ">
               {
                 medical.map(item => <ContestCard2 key={item._id} item={item}></ContestCard2> )
               }
@@ -49,7 +49,7 @@ const AllContest = () => {
           </TabPanel>
           <TabPanel>
             {" "}
-            <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-4 sm:py-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 sm:px-40 md:px-5 gap-4 sm:py-5">
             {
                 writing.map(item => <ContestCard2 key={item._id} item={item}></ContestCard2> )
               }
@@ -57,7 +57,7 @@ const AllContest = () => {
           </TabPanel>
           <TabPanel>
             {" "}
-            <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-4 sm:py-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 sm:px-40 md:px-5 gap-4 sm:py-5">
             {
                 gaming.map(item => <ContestCard2 key={item._id} item={item}></ContestCard2> )
               }
